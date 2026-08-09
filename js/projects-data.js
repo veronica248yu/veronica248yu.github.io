@@ -1,7 +1,9 @@
 // Placeholder project metadata. Replace with real project info as it becomes available.
 // `sortDate` drives the date sort (ISO string, use the project's start date).
 // `thumbFit` is "cover" for full-bleed art or "contain" for images with transparent backgrounds.
+// Single source of truth for the project gallery (projects.html) and the homepage thumbnails.
 const PROJECTS = [
+  // Claw Robot project card + detail page metadata
   {
     id: "claw-robot",
     name: "Claw Robot",
@@ -14,6 +16,7 @@ const PROJECTS = [
     thumbFit: "contain",
     url: "projects/claw-robot.html",
   },
+  // Autonomous Rover project card + detail page metadata
   {
     id: "autonomous-rover",
     name: "Autonomous Rover",
@@ -26,6 +29,7 @@ const PROJECTS = [
     thumbFit: "cover",
     url: "projects/autonomous-rover.html",
   },
+  // Solar Car Suspension project card + detail page metadata
   {
     id: "solar-car-suspension",
     name: "Solar Car Suspension",
@@ -38,6 +42,7 @@ const PROJECTS = [
     thumbFit: "cover",
     url: "projects/solar-car-suspension.html",
   },
+  // Prosthetic Hand Design project card + detail page metadata
   {
     id: "prosthetic-hand",
     name: "Prosthetic Hand Design",
@@ -50,6 +55,7 @@ const PROJECTS = [
     thumbFit: "cover",
     url: "projects/prosthetic-hand.html",
   },
+  // Personal Website project card + detail page metadata
   {
     id: "personal-website",
     name: "Personal Website",

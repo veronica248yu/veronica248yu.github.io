@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects — Veronica Yu</title>
+    <!-- Google Fonts: Space Grotesk (headings) + Inter (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- shared site styles -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="theme-green">
+    <!-- top nav: name links home, links to the other pages -->
     <nav class="site-nav">
       <div class="wrap">
         <a class="nav-name" href="index.html">Veronica Yu</a>
@@ -26,8 +29,10 @@
 
     <main>
       <div class="wrap">
+        <!-- page title -->
         <h1 class="page-heading">Projects</h1>
 
+        <!-- skill filter + sort dropdowns (wired up in projects.js) -->
         <div class="filter-bar">
           <label class="filter-label" for="skill-filter">Filter by:</label>
           <select id="skill-filter">
@@ -44,10 +49,12 @@
           <span class="filter-count" id="filter-count"></span>
         </div>
 
+        <!-- project cards get rendered here by projects.js -->
         <div class="card-grid" id="card-grid"></div>
       </div>
     </main>
 
+    <!-- contact footer -->
     <footer class="site-footer">
       <div class="wrap">
         <p>
@@ -66,6 +73,7 @@
       </div>
     </footer>
 
+    <!-- project metadata + filter/sort rendering logic -->
     <script src="js/projects-data.js"></script>
     <script src="js/projects.js"></script>
   </body>

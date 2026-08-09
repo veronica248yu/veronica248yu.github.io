@@ -1,4 +1,5 @@
 (function () {
+  // grab the filter bar controls and the container cards get rendered into
   const grid = document.getElementById("card-grid");
   const skillSelect = document.getElementById("skill-filter");
   const sortSelect = document.getElementById("sort-order");
@@ -15,6 +16,7 @@
     skillSelect.appendChild(opt);
   });
 
+  // build the HTML markup for one project card
   function cardHTML(project) {
     const fitClass =
       project.thumbFit === "contain" ? "card-thumb contain" : "card-thumb";
@@ -32,14 +34,17 @@
     `;
   }
 
+  // re-filter, re-sort, and re-render the whole card grid from scratch
   function render() {
     const skill = skillSelect.value;
     const sort = sortSelect.value;
 
+    // keep only projects that have the selected skill
     let list = PROJECTS.filter(
       (p) => skill === "all" || p.skills.includes(skill),
     );
 
+    // sort the filtered list by the selected order
     list = list.slice().sort((a, b) => {
       if (sort === "newest") return b.sortDate.localeCompare(a.sortDate);
       if (sort === "oldest") return a.sortDate.localeCompare(b.sortDate);
@@ -51,6 +56,7 @@
 
     grid.innerHTML = list.map(cardHTML).join("");
 
+    // show a placeholder message if the filter matched nothing
     const existingEmpty = document.querySelector(".no-results");
     if (existingEmpty) existingEmpty.remove();
     if (!list.length) {
@@ -61,6 +67,7 @@
     }
   }
 
+  // re-render whenever either dropdown changes, plus once on page load
   skillSelect.addEventListener("change", render);
   sortSelect.addEventListener("change", render);
   render();
