@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Veronica Yu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="theme-green">
+    <nav class="site-nav">
+      <div class="wrap">
+        <a class="nav-name" href="index.html">Veronica Yu</a>
+        <ul class="nav-links">
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="fun.html">Fun</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="wrap">
+        <h1 class="page-heading">Projects</h1>
+
+        <div class="filter-bar">
+          <label class="filter-label" for="skill-filter">Filter by:</label>
+          <select id="skill-filter">
+            <option value="all">All skills</option>
+          </select>
+
+          <label class="filter-label" for="sort-order">Sort by:</label>
+          <select id="sort-order">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="name">Name (A-Z)</option>
+          </select>
+
+          <span class="filter-count" id="filter-count"></span>
+        </div>
+
+        <div class="card-grid" id="card-grid"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          email:
+          <a href="mailto:veronicayu@college.harvard.edu"
+            >veronicayu@college.harvard.edu</a
+          ><br />
+          linkedin:
+          <a
+            href="https://www.linkedin.com/in/veronica-248-yu/"
+            target="_blank"
+            rel="noopener"
+            >https://www.linkedin.com/in/veronica-248-yu/</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/projects-data.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>

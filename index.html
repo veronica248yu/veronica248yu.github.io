@@ -1,12 +1,146 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veronica Yu</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <p>Hello, I'm Veronica.</p>
-    <object class="pdf" data="VeronicaYu_Portfolio.pdf#zoom=page-fit"></object>
+    <nav class="site-nav">
+      <div class="wrap">
+        <a class="nav-name" href="index.html">Veronica Yu</a>
+        <ul class="nav-links">
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="fun.html">Fun</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-scatter" aria-hidden="false">
+          <a
+            href="projects/claw-robot.html"
+            title="Claw Robot"
+            style="
+              left: 6%;
+              top: 12%;
+              width: 190px;
+              --rot: -10deg;
+              transform: rotate(-10deg);
+            "
+          >
+            <img
+              src="assets/images/claw-robot-cutout.png"
+              alt="Claw Robot project thumbnail"
+            />
+          </a>
+          <a
+            href="projects/autonomous-rover.html"
+            title="Autonomous Rover"
+            style="
+              left: 31%;
+              top: 6%;
+              width: 150px;
+              --rot: 6deg;
+              transform: rotate(6deg);
+            "
+          >
+            <img
+              src="assets/images/thumbs/project-2.png"
+              alt="Autonomous Rover project thumbnail"
+              style="border-radius: 14px"
+            />
+          </a>
+          <a
+            href="projects/solar-car-suspension.html"
+            title="Solar Car Suspension"
+            style="
+              left: 73%;
+              top: 14%;
+              width: 160px;
+              --rot: -6deg;
+              transform: rotate(-6deg);
+            "
+          >
+            <img
+              src="assets/images/thumbs/project-3.png"
+              alt="Solar Car Suspension project thumbnail"
+              style="border-radius: 14px"
+            />
+          </a>
+          <a
+            href="projects/prosthetic-hand.html"
+            title="Prosthetic Hand Design"
+            style="
+              left: 9%;
+              top: 64%;
+              width: 160px;
+              --rot: 10deg;
+              transform: rotate(10deg);
+            "
+          >
+            <img
+              src="assets/images/thumbs/project-4.png"
+              alt="Prosthetic Hand Design project thumbnail"
+              style="border-radius: 14px"
+            />
+          </a>
+          <a
+            href="projects/personal-website.html"
+            title="Personal Website"
+            style="
+              left: 76%;
+              top: 60%;
+              width: 170px;
+              --rot: -9deg;
+              transform: rotate(-9deg);
+            "
+          >
+            <img
+              src="assets/images/thumbs/project-5.png"
+              alt="Personal Website project thumbnail"
+              style="border-radius: 14px"
+            />
+          </a>
+        </div>
+
+        <div class="hero-content">
+          <h1>Hi, I'm Veronica.</h1>
+          <p>I'm a third-year at Harvard studying mechanical engineering.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-filled" href="projects.html">Projects</a>
+            <a class="btn btn-outline" href="fun.html">Fun</a>
+            <a class="btn btn-filled" href="resume.html">Resume</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          email:
+          <a href="mailto:veronicayu@college.harvard.edu"
+            >veronicayu@college.harvard.edu</a
+          ><br />
+          linkedin:
+          <a
+            href="https://www.linkedin.com/in/veronica-248-yu/"
+            target="_blank"
+            rel="noopener"
+            >https://www.linkedin.com/in/veronica-248-yu/</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
