@@ -8,7 +8,7 @@
   --text-secondary: rgba(20, 21, 15, 0.6);
   --max-width: 1200px;
   --nav-h: 96px;
-  --font-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-heading: "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 }
 
@@ -449,33 +449,39 @@ body.theme-green .filter-bar select {
 
 .section-flow .flow-text {
   flex: 1 1 340px;
+  max-width: 720px;
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
-.section-flow .flow-img {
-  flex: 1 1 300px;
-  max-width: 380px;
+/* holds however many photo placeholders a section needs (0-5) */
+.flow-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex: 2 1 380px;
+}
+
+.flow-images .flow-img {
+  flex: 1 1 200px;
+  max-width: 240px;
+}
+
+.flow-images .flow-img img {
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.section-flow .flow-img img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.flow-img-row {
-  display: flex;
-  gap: 20px;
-  flex: 1 1 300px;
-  flex-wrap: wrap;
-}
-
-.flow-img-row .flow-img {
-  flex: 1 1 160px;
-  max-width: 220px;
+/* placeholder caption under each article image, to be filled in later */
+.img-caption {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+  font-style: italic;
 }
 
 .project-article p {
