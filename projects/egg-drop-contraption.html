@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="theme-green">
-  <!-- top nav: name links home, links to the other pages -->
-  <nav class="site-nav">
-    <div class="wrap">
-      <a class="nav-name" href="../index.html">Veronica Yu</a>
-      <ul class="nav-links">
-        <li><a href="../projects.html" aria-current="page">Projects</a></li>
-        <li><a href="../fun.html">Fun</a></li>
-        <li><a href="../resume.html">Resume</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- top nav: name links home, links to the other pages -->
+    <nav class="site-nav">
+      <div class="wrap">
+        <a class="nav-name" href="../index.html">Veronica Yu</a>
+        <ul class="nav-links">
+          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+          <li><a href="../fun.html">Fun</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <main>
       <div class="wrap">
@@ -36,7 +36,10 @@
             <h1>Egg Drop Contraption</h1>
             <p class="meta-line">November - December 2025</p>
             <p class="meta-line">Class Project &nbsp;|&nbsp; Cambridge, MA</p>
-            <p class="project-skills">Mechanical Design ~ MATLAB ~ SolidWorks ~ 3D Printing ~ Laser Cutting</p>
+            <p class="project-skills">
+              Mechanical Design ~ MATLAB ~ SolidWorks ~ 3D Printing ~ Laser
+              Cutting
+            </p>
           </div>
           <!-- hero image -->
           <div class="project-hero-img">
@@ -53,26 +56,31 @@
           <section>
             <h2>Problem Statement</h2>
             <div class="section-flow">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-1.png"
-                  alt="Egg Drop Contraption placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/egg-drop-contraption/problem1.png"
+                    alt="Provided shocks"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Provided shocks</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/egg-drop-contraption/problem2.png"
+                    alt="Contraption carriage system"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Contraption carriage system</p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-2.png"
-                  alt="Egg Drop Contraption placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Build a contraption that connects to the bottom of an egg carriage and prevents the egg from cracking when dropped from the tallest height — using only the provided springs, dampers, and plywood.</p>
+                <p>
+                  Build a contraption that connects to the bottom of a carriage
+                  system and prevents the egg from cracking when dropped from
+                  the tallest height — using only the provided springs, dampers,
+                  and plywood.
+                </p>
               </div>
             </div>
           </section>
@@ -81,50 +89,54 @@
           <section>
             <h2>Ideas and Prototyping</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-3.png"
-                  alt="Egg Drop Contraption placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/egg-drop-contraption/ideas1.png"
+                    alt="2-DOF response analysis in MATLAB"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">2-DOF response analysis in MATLAB</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/egg-drop-contraption/ideas2.jpg"
+                    alt="Sketches"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Sketches</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/egg-drop-contraption/ideas3.png"
+                    alt="Side view with no compression"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Side view with no compression</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/egg-drop-contraption/ideas4.png"
+                    alt="Side view with expected compression"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Side view with expected compression</p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-4.png"
-                  alt="Egg Drop Contraption placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-5.png"
-                  alt="Egg Drop Contraption placeholder photo 3"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-6.png"
-                  alt="Egg Drop Contraption placeholder photo 4"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-1.png"
-                  alt="Egg Drop Contraption placeholder photo 5"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Add your prototyping process here.</p>
+                <p>
+                  We modeled the situation as a 2-DOF system. With MATLAB, we
+                  found that the spring and damping coefficients of the second
+                  layer were most significant: as each coefficient increases,
+                  the max acceleration and displacement increase.
+                </p>
+                <p>
+                  Our biggest focus was to increase deceleration distance of the
+                  egg while decreasing spring compression to prevent
+                  bottoming-out. We approached this by incorporating
+                  <b>levers</b>
+                  in our design.
+                </p>
               </div>
             </div>
           </section>
@@ -134,7 +146,30 @@
             <h2>Challenges</h2>
             <div class="section-flow">
               <div class="flow-text">
-                <p>Add your challenges here.</p>
+                <p>
+                  We faced the following challenges, which led to design
+                  iterations:
+                </p>
+                <ul>
+                  <li>
+                    Since the shocks can only compress, not extend, we had to
+                    flip where the shock was relative to the pivot.
+                  </li>
+                  <li>
+                    Spring and damping coefficients were too low. We doubled the
+                    number of shocks.
+                  </li>
+                  <li>
+                    We added slots for the connection between shock and lever so
+                    that the shocks could stay vertical as the lever pressed
+                    down.
+                  </li>
+                  <li>
+                    There were restrictions on how far back the contraption
+                    could extend, so the design had to be asymmetrical to still
+                    maximize the lever length.
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -143,34 +178,40 @@
           <section>
             <h2>Results</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-2.png"
-                  alt="Egg Drop Contraption placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/egg-drop-contraption/results1.png"
+                    alt="Final CAD"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Final CAD</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/egg-drop-contraption/results2.png"
+                    alt="Competition day"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Competition day</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/egg-drop-contraption/results3.jpg"
+                    alt="Failure"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Failure</p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-3.png"
-                  alt="Egg Drop Contraption placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-4.png"
-                  alt="Egg Drop Contraption placeholder photo 3"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Wrote MATLAB code to model the response of a 2-DOF system. Designed a lever system to lower the effective spring and damping constants and prevent bottoming-out. Created the CAD and assembled the system. (Result: the 3D-printed parts immediately snapped — we should've flipped the print orientation.)</p>
+                <p>
+                  Overall, there were many weak points that we didn't have time
+                  to flesh out. Our major failure point was our 3D prints, which
+                  we printed with poor orientation, resulting in immediate
+                  separation of layers. We also didn't account for the
+                  additional weight that all the hardware would add.
+                </p>
               </div>
             </div>
           </section>
@@ -183,26 +224,26 @@
       </div>
     </main>
 
-  <!-- contact footer -->
-  <footer class="site-footer">
-    <div>
-      <p>Yes, this website was vibe-coded.</p>
-    </div>
-    <div class="wrap">
-      <p>
-        email:
-        <a href="mailto:veronicayu@college.harvard.edu"
-          >veronicayu@college.harvard.edu</a
-        ><br />
-        linkedin:
-        <a
-          href="https://www.linkedin.com/in/veronica-248-yu/"
-          target="_blank"
-          rel="noopener"
-          >https://www.linkedin.com/in/veronica-248-yu/</a
-        >
-      </p>
-    </div>
-  </footer>
+    <!-- contact footer -->
+    <footer class="site-footer">
+      <div>
+        <p>Yes, this website was vibe-coded.</p>
+      </div>
+      <div class="wrap">
+        <p>
+          email:
+          <a href="mailto:veronicayu@college.harvard.edu"
+            >veronicayu@college.harvard.edu</a
+          ><br />
+          linkedin:
+          <a
+            href="https://www.linkedin.com/in/veronica-248-yu/"
+            target="_blank"
+            rel="noopener"
+            >https://www.linkedin.com/in/veronica-248-yu/</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
