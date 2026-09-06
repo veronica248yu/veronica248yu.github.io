@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="theme-green">
-  <!-- top nav: name links home, links to the other pages -->
-  <nav class="site-nav">
-    <div class="wrap">
-      <a class="nav-name" href="../index.html">Veronica Yu</a>
-      <ul class="nav-links">
-        <li><a href="../projects.html" aria-current="page">Projects</a></li>
-        <li><a href="../fun.html">Fun</a></li>
-        <li><a href="../resume.html">Resume</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- top nav: name links home, links to the other pages -->
+    <nav class="site-nav">
+      <div class="wrap">
+        <a class="nav-name" href="../index.html">Veronica Yu</a>
+        <ul class="nav-links">
+          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+          <li><a href="../fun.html">Fun</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <main>
       <div class="wrap">
@@ -36,7 +36,10 @@
             <h1>Air Permeability Tester</h1>
             <p class="meta-line">December 2025 - March 2026</p>
             <p class="meta-line">Research &nbsp;|&nbsp; Cambridge, MA</p>
-            <p class="project-skills">Sensor Integration ~ Mechanical Design ~ SolidWorks ~ 3D Printing ~ Testing & Validation</p>
+            <p class="project-skills">
+              Sensor Integration ~ Mechanical Design ~ SolidWorks ~ 3D Printing
+              ~ Testing & Validation
+            </p>
           </div>
           <!-- hero image -->
           <div class="project-hero-img">
@@ -53,26 +56,34 @@
           <section>
             <h2>Problem Statement</h2>
             <div class="section-flow">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-4.png"
-                  alt="Air Permeability Tester placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/air-permeability-tester/context1.png"
+                    alt="Initial sketch"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Initial sketch</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/air-permeability-tester/context2.jpeg"
+                    alt="MATLAB script planning"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">MATLAB script planning</p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-5.png"
-                  alt="Air Permeability Tester placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Build an air permeability tester that measures the air flow rate through a material at a set pressure differential.</p>
+                <p>
+                  Build an air permeability tester that measures the air flow
+                  rate through a material at a set pressure differential.
+                </p>
+                <p>
+                  The setup connects to the wall vacuum, pulling air through the
+                  test material and flowmeter. A sensor measures the pressure
+                  differential across the material.
+                </p>
               </div>
             </div>
           </section>
@@ -81,26 +92,55 @@
           <section>
             <h2>Ideas and Prototyping</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-6.png"
-                  alt="Air Permeability Tester placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/air-permeability-tester/ideas1.png"
+                    alt="Sketches for test rig parts"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Sketches for test rig parts</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/air-permeability-tester/ideas2.jpeg"
+                    alt="Initial setup with metal parts"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Initial setup with metal parts</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/air-permeability-tester/ideas3.jpeg"
+                    alt="Test section with o-rings"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Test section with o-rings</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/air-permeability-tester/ideas4.jpeg"
+                    alt="Inside view through calibration plate with honeycomb filter"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">
+                    Inside view through calibration plate with honeycomb filter
+                  </p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-1.png"
-                  alt="Air Permeability Tester placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Add your prototyping process here.</p>
+                <p>Some of the main adjustments made along the way:</p>
+                <ul>
+                  <li>
+                    Switched from metal to 3D prints to allow for customizable
+                    test area
+                  </li>
+                  <li>Adjusted 3D printing methods to reduce leaks</li>
+                  <li>
+                    Opened one end to atmosphere to reduce airflow fluctuations
+                    due to diameter change
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -109,18 +149,29 @@
           <section>
             <h2>Challenges</h2>
             <div class="section-flow">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-2.png"
-                  alt="Air Permeability Tester placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/air-permeability-tester/challenges1.jpeg"
+                    alt="Calibration testing"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Calibration testing</p>
+                </div>
               </div>
-            </div>
               <div class="flow-text">
-                <p>Add your challenges here.</p>
+                <p>
+                  Initially experienced a lot of fluctuation in readings
+                  depending on tubing diameter differences. Switched around the
+                  order and reduced number of connection points in the 3D print
+                  version.
+                </p>
+                <p>
+                  When calibrating, measurements were consistently higher than
+                  theoretical calculations. Tried adjusting many different
+                  factors, and ultimately believe it may be due to inaccurate
+                  readings from pressure differential sensor.
+                </p>
               </div>
             </div>
           </section>
@@ -129,18 +180,23 @@
           <section>
             <h2>Results</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-3.png"
-                  alt="Air Permeability Tester placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/air-permeability-tester/results.jpg"
+                    alt="Last iteration"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Last iteration</p>
+                </div>
               </div>
-            </div>
               <div class="flow-text">
-                <p>Built mechanical fixtures to clamp the specimen and connect tubing while preventing leakage. Integrated electronics for a pressure differential sensor and flowmeter. Designed and executed calibration tests to align with theoretical calculations.</p>
+                <p>
+                  This tester was no longer needed for the research project, but
+                  it was at a point of providing consistent readings with an
+                  accurate trend, though offset from expected values. My next
+                  step would be to try out a different pressure sensor.
+                </p>
               </div>
             </div>
           </section>
@@ -153,26 +209,26 @@
       </div>
     </main>
 
-  <!-- contact footer -->
-  <footer class="site-footer">
-    <div>
-      <p>Yes, this website was vibe-coded.</p>
-    </div>
-    <div class="wrap">
-      <p>
-        email:
-        <a href="mailto:veronicayu@college.harvard.edu"
-          >veronicayu@college.harvard.edu</a
-        ><br />
-        linkedin:
-        <a
-          href="https://www.linkedin.com/in/veronica-248-yu/"
-          target="_blank"
-          rel="noopener"
-          >https://www.linkedin.com/in/veronica-248-yu/</a
-        >
-      </p>
-    </div>
-  </footer>
+    <!-- contact footer -->
+    <footer class="site-footer">
+      <div>
+        <p>Yes, this website was vibe-coded.</p>
+      </div>
+      <div class="wrap">
+        <p>
+          email:
+          <a href="mailto:veronicayu@college.harvard.edu"
+            >veronicayu@college.harvard.edu</a
+          ><br />
+          linkedin:
+          <a
+            href="https://www.linkedin.com/in/veronica-248-yu/"
+            target="_blank"
+            rel="noopener"
+            >https://www.linkedin.com/in/veronica-248-yu/</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="theme-green">
-  <!-- top nav: name links home, links to the other pages -->
-  <nav class="site-nav">
-    <div class="wrap">
-      <a class="nav-name" href="../index.html">Veronica Yu</a>
-      <ul class="nav-links">
-        <li><a href="../projects.html" aria-current="page">Projects</a></li>
-        <li><a href="../fun.html">Fun</a></li>
-        <li><a href="../resume.html">Resume</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- top nav: name links home, links to the other pages -->
+    <nav class="site-nav">
+      <div class="wrap">
+        <a class="nav-name" href="../index.html">Veronica Yu</a>
+        <ul class="nav-links">
+          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+          <li><a href="../fun.html">Fun</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <main>
       <div class="wrap">
@@ -36,7 +36,10 @@
             <h1>Rotational Fixture</h1>
             <p class="meta-line">March - May 2026</p>
             <p class="meta-line">Research &nbsp;|&nbsp; Cambridge, MA</p>
-            <p class="project-skills">Electronics Integration ~ MATLAB ~ Mechanical Design ~ SolidWorks ~ 3D Printing</p>
+            <p class="project-skills">
+              Electronics Integration ~ MATLAB ~ Mechanical Design ~ SolidWorks
+              ~ 3D Printing
+            </p>
           </div>
           <!-- hero image -->
           <div class="project-hero-img">
@@ -54,7 +57,10 @@
             <h2>Problem Statement</h2>
             <div class="section-flow">
               <div class="flow-text">
-                <p>Build a fixture to rotate a cylinder in a wind tunnel test section from 0° to 180° in 5° increments.</p>
+                <p>
+                  Build a fixture to rotate a cylinder in a wind tunnel test
+                  section from 0° to 180° in 5° increments.
+                </p>
               </div>
             </div>
           </section>
@@ -63,26 +69,39 @@
           <section>
             <h2>Ideas and Prototyping</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-5.png"
-                  alt="Rotational Fixture placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/rotational-fixture/ideas1.png"
+                    alt="Bearing design sketches"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Bearing design sketches</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/rotational-fixture/ideas2.png"
+                    alt="Motor attachment to wind tunnel"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Motor attachment to wind tunnel</p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-6.png"
-                  alt="Rotational Fixture placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Add your prototyping process here.</p>
+                <p>
+                  1. New bearing design: Switched around the layering to ensure
+                  that the nut would not loosen when cylinder was rotating.
+                </p>
+                <p>
+                  2. Motor attachment: Made the mount compatible with the wind
+                  tunnel opening. Calculated the gear ratio to reduce speed and
+                  fixed motor at the appropriate distance.
+                </p>
+                <p>
+                  3. Stepper motor control: Wrote MATLAB code and wired
+                  electronics to control NEMA 17 stepper motor and integrate
+                  into wind tunnel DAQ system.
+                </p>
               </div>
             </div>
           </section>
@@ -92,7 +111,18 @@
             <h2>Challenges</h2>
             <div class="section-flow">
               <div class="flow-text">
-                <p>Add your challenges here.</p>
+                <ul>
+                  <li>
+                    Gears were not meshing well, but it turned out to be an
+                    issue with the bearings that didn't allow the cylinder to
+                    rotate smoothly.
+                  </li>
+                  <li>
+                    Had issues figuring out the right rates for DAQ data
+                    acquisition and sending digital waveform to motor
+                    controller.
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -101,26 +131,26 @@
           <section>
             <h2>Results</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-1.png"
-                  alt="Rotational Fixture placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/rotational-fixture/results1.png"
+                    alt="Rotational Fixture placeholder photo 1"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Checking general rotation amount</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/rotational-fixture/results2.jpg"
+                    alt="Rotational Fixture placeholder photo 2"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Final setup</p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-2.png"
-                  alt="Rotational Fixture placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Selected a stepper motor and motor controller by reading through specifications. Designed a motor mount and bearing setup compatible with the wind tunnel and cylinder. Wrote a MATLAB script to control the rotation amount through the wind tunnel's DAQ.</p>
+                <p>Rotational fixture complete!</p>
               </div>
             </div>
           </section>
@@ -133,26 +163,26 @@
       </div>
     </main>
 
-  <!-- contact footer -->
-  <footer class="site-footer">
-    <div>
-      <p>Yes, this website was vibe-coded.</p>
-    </div>
-    <div class="wrap">
-      <p>
-        email:
-        <a href="mailto:veronicayu@college.harvard.edu"
-          >veronicayu@college.harvard.edu</a
-        ><br />
-        linkedin:
-        <a
-          href="https://www.linkedin.com/in/veronica-248-yu/"
-          target="_blank"
-          rel="noopener"
-          >https://www.linkedin.com/in/veronica-248-yu/</a
-        >
-      </p>
-    </div>
-  </footer>
+    <!-- contact footer -->
+    <footer class="site-footer">
+      <div>
+        <p>Yes, this website was vibe-coded.</p>
+      </div>
+      <div class="wrap">
+        <p>
+          email:
+          <a href="mailto:veronicayu@college.harvard.edu"
+            >veronicayu@college.harvard.edu</a
+          ><br />
+          linkedin:
+          <a
+            href="https://www.linkedin.com/in/veronica-248-yu/"
+            target="_blank"
+            rel="noopener"
+            >https://www.linkedin.com/in/veronica-248-yu/</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
