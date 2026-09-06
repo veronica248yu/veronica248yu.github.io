@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="theme-green">
-  <!-- top nav: name links home, links to the other pages -->
-  <nav class="site-nav">
-    <div class="wrap">
-      <a class="nav-name" href="../index.html">Veronica Yu</a>
-      <ul class="nav-links">
-        <li><a href="../projects.html" aria-current="page">Projects</a></li>
-        <li><a href="../fun.html">Fun</a></li>
-        <li><a href="../resume.html">Resume</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- top nav: name links home, links to the other pages -->
+    <nav class="site-nav">
+      <div class="wrap">
+        <a class="nav-name" href="../index.html">Veronica Yu</a>
+        <ul class="nav-links">
+          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+          <li><a href="../fun.html">Fun</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <main>
       <div class="wrap">
@@ -36,7 +36,9 @@
             <h1>Papa's Baristaria</h1>
             <p class="meta-line">April - May 2026</p>
             <p class="meta-line">Class Project &nbsp;|&nbsp; Cambridge, MA</p>
-            <p class="project-skills">Arduino ~ Electronics Integration ~ Circuit Debugging</p>
+            <p class="project-skills">
+              Arduino ~ Electronics Integration ~ Circuit Debugging
+            </p>
           </div>
           <!-- hero image -->
           <div class="project-hero-img">
@@ -53,18 +55,25 @@
           <section>
             <h2>Problem Statement</h2>
             <div class="section-flow">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-2.png"
-                  alt="Papa's Baristaria placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/papas-baristaria/context1.jpg"
+                    alt="Papa's Baristaria placeholder photo 1"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Papa's Freezeria inspiration</p>
+                </div>
               </div>
-            </div>
               <div class="flow-text">
-                <p>Create a real-life version of the Papa Louie games with two phases: two players compete to fill up their half of an LED strip first, with 3 button presses lighting up one LED; the winner then stops an oscillating LED pattern to select a drink to be dispensed.</p>
+                <p>
+                  Create a real-life version of the Papa Louie games with two
+                  phases: <br /><br />
+                  1. Two players compete to fill up their half of an LED strip
+                  first, with 3 button presses lighting up one LED <br /><br />
+                  2. The winner then stops an oscillating LED pattern to select
+                  a drink to be dispensed.
+                </p>
               </div>
             </div>
           </section>
@@ -73,26 +82,44 @@
           <section>
             <h2>Ideas and Prototyping</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-3.png"
-                  alt="Papa's Baristaria placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/papas-baristaria/ideas1.jpeg"
+                    alt="LED Strip Testing"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">LED strip testing</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/papas-baristaria/ideas2.jpeg"
+                    alt="Overall circuit"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Overall circuit</p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-4.png"
-                  alt="Papa's Baristaria placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Add your prototyping process here.</p>
+                <p>
+                  We experimented a lot with how the LED visuals would look,
+                  testing out the following features and options:
+                  <ul>
+                    <li>
+                      Section of 15 lights with green in the middle and two other colors on the outside 
+                      moving back and forth. The location of the middle green upon stopping indicates the selected drink. 
+                    </li>
+                    <li>
+                      One color for each drink section. Flash lights back and forth so that the end of 
+                      the lit section is what moves rather than a small section of lights. The location
+                      of the end of the lit section upon stopping indicates the selected drink.
+                    </li>
+                    <li>
+                      Start off with fast movement, then slow down gradually to lower difficulty, matching
+                      the style of Papa's Freezeria. 
+                    </li>
+                  </ul>
+                </p>
               </div>
             </div>
           </section>
@@ -102,7 +129,17 @@
             <h2>Challenges</h2>
             <div class="section-flow">
               <div class="flow-text">
-                <p>Add your challenges here.</p>
+                <ul>
+                    <li>
+                      We needed to figure out game logic to make sure that only the winner of the first
+                      section would be able to play the game and to make sure that we could reset the game 
+                      properly each time. 
+                    </li>
+                    <li>
+                      Each reset of the Arduino would send an initial voltage to the pumps, resulting in some
+                      messy situations. 
+                    </li>
+                  </ul>
               </div>
             </div>
           </section>
@@ -111,26 +148,40 @@
           <section>
             <h2>Results</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-5.png"
-                  alt="Papa's Baristaria placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/papas-baristaria/results1.JPG"
+                    alt="Front view"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Front view</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/papas-baristaria/results2.jpg"
+                    alt="Back view"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Back view</p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-6.png"
-                  alt="Papa's Baristaria placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Wrote the Arduino code controlling the LED strip and overall game logic. Completed the full circuit connecting the buttons, LED strip, and Arduino to the pump circuit.</p>
+                <p>
+                  Fun little game with a mix of competition, nostalgia, and yummy drinks!
+                </p>
+                <p>
+                  Improvements we would implement for the future:
+                </p>
+                <ul>
+                    <li>
+                      Try to adjust the speed of dispensing and control how much is dispensed based on 
+                      how fast the player reacted. 
+                    </li>
+                    <li>
+                      Resolve the challenge of pumps turning on each time Arduino was reset. 
+                    </li>
+                  </ul>
               </div>
             </div>
           </section>
@@ -143,26 +194,26 @@
       </div>
     </main>
 
-  <!-- contact footer -->
-  <footer class="site-footer">
-    <div>
-      <p>Yes, this website was vibe-coded.</p>
-    </div>
-    <div class="wrap">
-      <p>
-        email:
-        <a href="mailto:veronicayu@college.harvard.edu"
-          >veronicayu@college.harvard.edu</a
-        ><br />
-        linkedin:
-        <a
-          href="https://www.linkedin.com/in/veronica-248-yu/"
-          target="_blank"
-          rel="noopener"
-          >https://www.linkedin.com/in/veronica-248-yu/</a
-        >
-      </p>
-    </div>
-  </footer>
+    <!-- contact footer -->
+    <footer class="site-footer">
+      <div>
+        <p>Yes, this website was vibe-coded.</p>
+      </div>
+      <div class="wrap">
+        <p>
+          email:
+          <a href="mailto:veronicayu@college.harvard.edu"
+            >veronicayu@college.harvard.edu</a
+          ><br />
+          linkedin:
+          <a
+            href="https://www.linkedin.com/in/veronica-248-yu/"
+            target="_blank"
+            rel="noopener"
+            >https://www.linkedin.com/in/veronica-248-yu/</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

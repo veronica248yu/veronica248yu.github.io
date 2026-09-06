@@ -130,11 +130,11 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 28px;
+  padding: 10px 20px;
   border-radius: 999px;
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
@@ -271,7 +271,7 @@ body.theme-green .filter-bar select {
 /* ---------- Project cards grid ---------- */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 48px 40px;
   padding-bottom: 80px;
 }
@@ -291,7 +291,7 @@ body.theme-green .filter-bar select {
 .project-card .card-thumb {
   width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
 }
@@ -325,20 +325,20 @@ body.theme-green .filter-bar select {
 
 .card-meta-row h3 {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 
 .card-meta-row .card-date {
   color: var(--text-secondary);
-  font-size: 1rem;
+  font-size: 0.8rem;
   white-space: nowrap;
 }
 
 .card-skills {
   margin: 10px 0 0;
   color: var(--text-primary);
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .no-results {
