@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="theme-green">
-  <!-- top nav: name links home, links to the other pages -->
-  <nav class="site-nav">
-    <div class="wrap">
-      <a class="nav-name" href="../index.html">Veronica Yu</a>
-      <ul class="nav-links">
-        <li><a href="../projects.html" aria-current="page">Projects</a></li>
-        <li><a href="../fun.html">Fun</a></li>
-        <li><a href="../resume.html">Resume</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- top nav: name links home, links to the other pages -->
+    <nav class="site-nav">
+      <div class="wrap">
+        <a class="nav-name" href="../index.html">Veronica Yu</a>
+        <ul class="nav-links">
+          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+          <li><a href="../fun.html">Fun</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <main>
       <div class="wrap">
@@ -35,8 +35,14 @@
           <div class="project-info">
             <h1>Python Image Tracking</h1>
             <p class="meta-line">June - August 2025</p>
-            <p class="meta-line">Bertoldi Group Research — Harvard PRISE Fellow &nbsp;|&nbsp; Cambridge, MA</p>
-            <p class="project-skills">Python ~ OpenCV ~ SciPy ~ Mechanical Design ~ SolidWorks ~ Instron ~ Laser Cutting</p>
+            <p class="meta-line">
+              Bertoldi Group Research — Harvard PRISE Fellow &nbsp;|&nbsp;
+              Cambridge, MA
+            </p>
+            <p class="project-skills">
+              Python ~ OpenCV ~ SciPy ~ Mechanical Design ~ SolidWorks ~ Instron
+              ~ Laser Cutting
+            </p>
           </div>
           <!-- hero image -->
           <div class="project-hero-img">
@@ -53,18 +59,29 @@
           <section>
             <h2>Problem Statement</h2>
             <div class="section-flow">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-6.png"
-                  alt="Python Image Tracking placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/sketches/sketch-6.png"
+                    alt="Python Image Tracking placeholder photo 1"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Caption</p>
+                </div>
               </div>
-            </div>
               <div class="flow-text">
-                <p>Research question: can kirigami-patterned textiles enhance convective cooling relative to a bare surface? (Details and pictures of the textile are excluded due to ongoing research.)</p>
+                <p>
+                  Research question: can kirigami-patterned textiles enhance
+                  convective cooling relative to a bare surface?
+                </p>
+                <p>
+                  My goal was to create a Python script to track contours on a
+                  moving textile and measure the surface area.
+                </p>
+                <p>
+                  *Details and pictures of the textile are excluded due to
+                  ongoing research.
+                </p>
               </div>
             </div>
           </section>
@@ -73,34 +90,48 @@
           <section>
             <h2>Ideas and Prototyping</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-1.png"
-                  alt="Python Image Tracking placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/python-image-tracking/ideas1.png"
+                    alt="Python Image Tracking  photo 1"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Tracing contour</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/python-image-tracking/ideas2.png"
+                    alt="Python Image Tracking  photo 2"
+                  />
+                  <!-- caption  -->
+                  <p class="img-caption">3D plot</p>
+                </div>
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/python-image-tracking/ideas3.png"
+                    alt="Python Image Tracking  photo 3"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Image processing</p>
+                </div>
               </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-2.png"
-                  alt="Python Image Tracking placeholder photo 2"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-3.png"
-                  alt="Python Image Tracking placeholder photo 3"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
-              </div>
-            </div>
               <div class="flow-text">
-                <p>Add your prototyping process here.</p>
+                <ul>
+                  <li>
+                    Used binarization and closing to isolate the openings in the
+                    textile.
+                  </li>
+                  <li>
+                    Used OpenCV to find contours and optical flow to track
+                    contours across movement.
+                  </li>
+                  <li>
+                    Triangulated the contour interiors and incorporated
+                    profilometer data to calculate projected and 3D surface
+                    area.
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -109,18 +140,22 @@
           <section>
             <h2>Challenges</h2>
             <div class="section-flow">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-4.png"
-                  alt="Python Image Tracking placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/python-image-tracking/challenges1.png"
+                    alt="Python Image Tracking placeholder photo 1"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">Triangulation errors</p>
+                </div>
               </div>
-            </div>
               <div class="flow-text">
-                <p>Add your challenges here.</p>
+                <p>
+                  Had to go through many iterations on the optical flow
+                  parameters and triangulation processes (both automated and
+                  custom versions).
+                </p>
               </div>
             </div>
           </section>
@@ -129,18 +164,21 @@
           <section>
             <h2>Results</h2>
             <div class="section-flow reverse">
-            <div class="flow-images">
-              <div class="flow-img">
-                <img
-                  src="../assets/images/sketches/sketch-5.png"
-                  alt="Python Image Tracking placeholder photo 1"
-                />
-                <!-- caption placeholder -->
-                <p class="img-caption">Caption</p>
+              <div class="flow-images">
+                <div class="flow-img">
+                  <img
+                    src="../assets/images/projects/python-image-tracking/python-image-tracking.jpg"
+                    alt="Python Image Tracking  photo 1"
+                  />
+                  <!-- caption placeholder -->
+                  <p class="img-caption">3D area triangulation</p>
+                </div>
               </div>
-            </div>
               <div class="flow-text">
-                <p>Developed a post-processing script to track contours as the textile is stretched and calculate 2D area, 3D area, and volume. Designed parts for the experimental setup. Conducted Instron experiments to collect data with a laser profilometer. Fabricated textile samples.</p>
+                <p>
+                  Developed a post-processing script to track contours as the
+                  textile is stretched and calculate 2D area and 3D area.
+                </p>
               </div>
             </div>
           </section>
@@ -153,26 +191,26 @@
       </div>
     </main>
 
-  <!-- contact footer -->
-  <footer class="site-footer">
-    <div>
-      <p>Yes, this website was vibe-coded.</p>
-    </div>
-    <div class="wrap">
-      <p>
-        email:
-        <a href="mailto:veronicayu@college.harvard.edu"
-          >veronicayu@college.harvard.edu</a
-        ><br />
-        linkedin:
-        <a
-          href="https://www.linkedin.com/in/veronica-248-yu/"
-          target="_blank"
-          rel="noopener"
-          >https://www.linkedin.com/in/veronica-248-yu/</a
-        >
-      </p>
-    </div>
-  </footer>
+    <!-- contact footer -->
+    <footer class="site-footer">
+      <div>
+        <p>Yes, this website was vibe-coded.</p>
+      </div>
+      <div class="wrap">
+        <p>
+          email:
+          <a href="mailto:veronicayu@college.harvard.edu"
+            >veronicayu@college.harvard.edu</a
+          ><br />
+          linkedin:
+          <a
+            href="https://www.linkedin.com/in/veronica-248-yu/"
+            target="_blank"
+            rel="noopener"
+            >https://www.linkedin.com/in/veronica-248-yu/</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
