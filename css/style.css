@@ -454,17 +454,24 @@ body.theme-green .filter-bar select {
   line-height: 1.7;
 }
 
-/* holds however many photo placeholders a section needs (0-5) */
+/* no images in this section: let the text fill the whole row instead of
+   sitting capped at 720px with empty space next to it */
+.section-flow .flow-text:only-child {
+  max-width: none;
+}
+
+/* sized to fit however many photos a section actually has (0-5) - never
+   stretched to fill leftover space, which is what caused the big gaps */
 .flow-images {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  flex: 2 1 380px;
+  flex: 0 1 auto;
+  max-width: 440px;
 }
 
 .flow-images .flow-img {
-  flex: 1 1 200px;
-  max-width: 240px;
+  flex: 0 0 200px;
 }
 
 .flow-images .flow-img img {
