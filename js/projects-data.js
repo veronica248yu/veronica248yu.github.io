@@ -150,6 +150,20 @@ const PROJECTS = [
     thumbFit: "cover",
     url: "projects/papas-baristaria.html",
   },
+  // Solar Imager Roll-Off Dome project card + detail page metadata
+  // TODO: dateDisplay/type/skills are placeholders - fill these in
+  {
+    id: "solar-imager-roll-off-dome",
+    name: "Solar Imager Roll-Off Dome",
+    dateDisplay: "October 2026 - present",
+    sortDate: "2026-10-15",
+    type: "Part-time Job",
+    location: "Cambridge, MA",
+    skills: ["FEA", "Structural analysis", "Machining"],
+    thumb: "assets/images/projects/astrolab.jpg",
+    thumbFit: "contain",
+    url: "projects/solar-imager-roll-off-dome.html",
+  },
   // Violin Workshopping project card + detail page metadata
   {
     id: "violin-workshopping",
