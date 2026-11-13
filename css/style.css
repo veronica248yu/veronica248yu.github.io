@@ -448,30 +448,30 @@ body.theme-green .filter-bar select {
 }
 
 .section-flow .flow-text {
-  flex: 1 1 340px;
-  max-width: 720px;
+  flex: 1 1 280px;
+  max-width: 420px;
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
 /* no images in this section: let the text fill the whole row instead of
-   sitting capped at 720px with empty space next to it */
+   sitting capped at 420px with empty space next to it */
 .section-flow .flow-text:only-child {
   max-width: none;
 }
 
-/* sized to fit however many photos a section actually has (0-5) - never
-   stretched to fill leftover space, which is what caused the big gaps */
+/* the photo column is the majority of the row (roughly 2x the text's
+   share) - flow-img tiles grow to fill it completely, so a single photo
+   still fills the whole column instead of leaving a gap */
 .flow-images {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  flex: 0 1 auto;
-  max-width: 440px;
+  flex: 2 1 480px;
 }
 
 .flow-images .flow-img {
-  flex: 0 0 200px;
+  flex: 1 1 260px;
 }
 
 .flow-images .flow-img img {
